@@ -4,7 +4,7 @@ const {WebhookClient} = require('dialogflow-fulfillment');
 const app = express();
 app.use(express.json());
 
-const serviceAccount = require('./your-firebase-credentials.json'); // Replace with your JSON
+const serviceAccount = require('./dialogflow_credentials.json'); // Replace with your JSON
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
